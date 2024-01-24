@@ -128,6 +128,7 @@ form .button input{
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 5px;
+    cursor: pointer;
 
 }
 form .button input:hover{
