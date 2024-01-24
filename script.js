@@ -73,12 +73,4 @@ function validate(){
     }
 }
 
-const sub = document.getElementById('submit');
-
-if(sub){
-    sub.addEventListener('click', (e) => {
-        e.innerHTML.h1="<h1>Thank You For Submitting the Form</h1>";
-        
-    })
-}
 
