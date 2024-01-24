@@ -57,3 +57,28 @@ menuBtn.onclick = () =>{
 //         }]
 //     });
 // });
+var email = document.getElementById('email');
+var error = document.getElementById('error');
+function validate(){
+    var regexp = "/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9\-]+)([a-z]{2,20})$/";
+    if(regexp.test(email.value)){
+        error.innerHTML = "Valid";
+        error.style.color = "green";
+        return true;
+    }
+    else{
+        error.innerHTML = "Invalid";
+        error.style.color = "red";
+        return false;
+    }
+}
+
+const sub = document.getElementById('submit');
+
+if(sub){
+    sub.addEventListener('click', (e) => {
+        e.innerHTML.h1="<h1>Thank You For Submitting the Form</h1>";
+        
+    })
+}
+
